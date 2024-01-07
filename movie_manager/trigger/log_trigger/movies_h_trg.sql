@@ -1,4 +1,4 @@
-CREATE OR REPLACE TRIGGER movie_h_trg
+CREATE OR REPLACE TRIGGER movies_h_trg
     AFTER INSERT OR UPDATE OR DELETE ON movies
     FOR EACH ROW
 DECLARE
@@ -10,7 +10,7 @@ BEGIN
     v_mod_user := sys_context('USERENV', 'OS_USER');
     v_mod_time := systimestamp;
 
-    INSERT INTO movie_h
+    INSERT INTO movies_h
         (id
         ,title
         ,release_year
@@ -35,7 +35,7 @@ BEGIN
         ,'D'
         ,:old.version + 1);
 ELSE
-    INSERT INTO movie_h
+    INSERT INTO movies_h
         (id
         ,title
         ,release_year
@@ -51,8 +51,8 @@ ELSE
         (:new.id
         ,:new.title
         ,:new.release_year
-        ,:new.release_year
         ,:new.genre_id
+        ,:new.director_id
         ,:new.creation_time
         ,:new.creator_user
         ,:new.mod_user
