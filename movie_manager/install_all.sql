@@ -87,5 +87,9 @@ PROMPT Recompile schema done.
 
 -- FK
 -- Tabla data
+PROMPT =====================================================
+PROMPT Uploading data...
+@./data/data_fill.sql
+PROMPT Upload data done.
 
 PROMPT Done.
