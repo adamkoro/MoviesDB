@@ -21,7 +21,7 @@ BEGIN
         ,version)
     VALUES
         (:old.id
-        ,:old.name
+        ,:old.genre
         ,:old.creation_time
         ,:old.creator_user
         ,v_mod_user
@@ -31,7 +31,7 @@ BEGIN
 ELSE
     INSERT INTO genres_h
         (id
-        ,name
+        ,genre
         ,creation_time
         ,creator_user
         ,mod_user
@@ -40,7 +40,7 @@ ELSE
         ,version)
     VALUES
         (:new.id
-        ,:new.name
+        ,:new.genre
         ,:new.creation_time
         ,:new.creator_user
         ,:new.mod_user

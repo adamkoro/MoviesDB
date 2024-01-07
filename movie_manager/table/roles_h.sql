@@ -10,3 +10,4 @@ CREATE TABLE roles_h (
     dml_flag CHAR(1),
     version NUMBER
 );
+/

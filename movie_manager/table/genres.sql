@@ -8,3 +8,4 @@ CREATE TABLE genres (
     dml_flag CHAR(1),
     version NUMBER
 );
+/

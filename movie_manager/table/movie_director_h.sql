@@ -9,3 +9,4 @@ CREATE TABLE movie_director_h (
     dml_flag CHAR(1),
     version NUMBER
 );
+/

@@ -1,5 +1,5 @@
-CREATE OR REPLACE TRIGGER movie_genre_h_trg
-    AFTER INSERT OR UPDATE OR DELETE ON movie_genre
+CREATE OR REPLACE TRIGGER roles_h_trg
+    AFTER INSERT OR UPDATE OR DELETE ON roles
     FOR EACH ROW
 DECLARE
     v_mod_user VARCHAR2(250 CHAR);
@@ -10,7 +10,7 @@ BEGIN
     v_mod_user := sys_context('USERENV', 'OS_USER');
     v_mod_time := systimestamp;
 
-    INSERT INTO movie_genre_h
+    INSERT INTO roles_h
         (movie_id
         ,actor_id
         ,id
@@ -31,7 +31,7 @@ BEGIN
         ,'D'
         ,:old.version + 1);
 ELSE
-    INSERT INTO movie_genre_h
+    INSERT INTO roles_h
         (movie_id
         ,actor_id
         ,id

@@ -9,3 +9,4 @@ CREATE TABLE actors_h (
     dml_flag CHAR(1),
     version NUMBER
 );
+/
