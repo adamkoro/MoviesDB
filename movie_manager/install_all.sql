@@ -93,6 +93,18 @@ PROMPT =====================================================
 @./trigger/log_trigger/roles_h_trg.sql
 PROMPT Install log triggers done.
 
+-- Producers
+PROMPT =====================================================
+PROMPT Installing producers...
+PROMPT =====================================================
+@./procedures/add_actor.sql
+@./procedures/add_genre.sql
+@./procedures/add_movie.sql
+@./procedures/add_director.sql
+@./procedures/add_rating.sql
+@./procedures/add_role.sql
+PROMPT Install producers done.
+
 -- Recompile schema
 PROMPT =====================================================
 PROMPT Recompiling schema...
@@ -103,11 +115,13 @@ END;
 /
 PROMPT Recompile schema done.
 
--- Tabla data
+-- Table data
 PROMPT =====================================================
 PROMPT Uploading data...
 PROMPT =====================================================
 @./data/data_fill.sql
 PROMPT Upload data done.
 
+PROMPT =====================================================
 PROMPT Done.
+PROMPT =====================================================
