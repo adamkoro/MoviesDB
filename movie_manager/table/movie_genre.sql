@@ -1,6 +1,7 @@
 CREATE TABLE movie_genre (
     movie_id NUMBER NOT NULL,
     genre_id NUMBER NOT NULL,
+    id NUMBER,
     creation_time TIMESTAMP(6),
     creator_user VARCHAR2(250 CHAR),
     mod_user VARCHAR2(250 CHAR),
