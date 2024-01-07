@@ -1,5 +1,5 @@
 CREATE TABLE ratings (
-    id NUMBER,
+    id NUMBER PRIMARY KEY,
     movie_id NUMBER NOT NULL,
     username VARCHAR2(100 CHAR) NOT NULL,
     rating NUMBER NOT NULL,

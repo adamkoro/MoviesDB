@@ -1,6 +1,6 @@
 CREATE TABLE movies (
-    id NUMBER,
-    title VARCHAR2(250 CHAR) NOT NULL,
+    id NUMBER PRIMARY KEY,
+    title VARCHAR2(250 CHAR) NOT NULL UNIQUE,
     release_year DATE NOT NULL,
     genre_id NUMBER,
     director_id NUMBER,

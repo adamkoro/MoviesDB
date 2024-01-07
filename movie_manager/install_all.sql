@@ -42,12 +42,7 @@ PROMPT Install log tables done.
 PROMPT =====================================================
 PROMPT Installing constrains...
 PROMPT =====================================================
--- Primary keys
-@./alter/actors_const.sql
-@./alter/genres_const.sql
 @./alter/movies_const.sql
-@./alter/director_const.sql
--- Foreign keys
 @./alter/ratings_const.sql
 @./alter/roles_const.sql
 PROMPT Install constrains done.
@@ -65,7 +60,7 @@ PROMPT =====================================================
 PROMPT Installing views...
 PROMPT =====================================================
 @./view/vw_movie_info.sql
-@./view/actor_movie_role.sql
+@./view/vw_actor_movie_role.sql
 @./view/vw_movie_director.sql
 PROMPT Install views done
 
@@ -121,6 +116,18 @@ PROMPT Uploading data...
 PROMPT =====================================================
 @./data/data_fill.sql
 PROMPT Upload data done.
+
+-- Test
+PROMPT =====================================================
+PROMPT Run tests...
+PROMPT =====================================================
+@./procedures/tests/test_add_actor.sql
+@./procedures/tests/test_add_director.sql
+@./procedures/tests/test_add_genre.sql
+@./procedures/tests/test_add_movie.sql
+@./procedures/tests/test_add_role.sql
+@./procedures/tests/test_add_rating.sql
+PROMPT Tests done.
 
 PROMPT =====================================================
 PROMPT Done.
