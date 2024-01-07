@@ -68,6 +68,7 @@ PROMPT =====================================================
 @./view/actor_movie_role.sql
 @./view/vw_movie_director.sql
 PROMPT Install views done
+
 -- Triggers
 PROMPT =====================================================
 PROMPT Installing triggers...
@@ -79,7 +80,11 @@ PROMPT =====================================================
 @./trigger/ratings_trg.sql
 @./trigger/roles_trg.sql
 PROMPT Install triggers done.
+
+-- Log triggers
+PROMPT =====================================================
 PROMPT Installing log triggers...
+PROMPT =====================================================
 @./trigger/log_trigger/actors_h_trg.sql
 @./trigger/log_trigger/directors_h_trg.sql
 @./trigger/log_trigger/genres_h_trg.sql
@@ -98,7 +103,6 @@ END;
 /
 PROMPT Recompile schema done.
 
--- FK
 -- Tabla data
 PROMPT =====================================================
 PROMPT Uploading data...
