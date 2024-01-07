@@ -40,7 +40,9 @@ PROMPT Installing constrains...
 PROMPT Install constrains done.
 
 -- Install types
-
+PROMPT Installing types...
+@./type/ty_movies.sql
+PROMPT Install types done.
 -- Packes
 
 -- Views
