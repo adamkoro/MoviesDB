@@ -1,0 +1,2 @@
+ALTER TABLE genres
+ADD CONSTRAINT genres_pk PRIMARY KEY (id);
