@@ -1,6 +1,12 @@
 PROMPT Installing DB...
 -- Install sequences
-
+PROMPT Installing sequences...
+@./sequences/actors_id_seq.sql
+@./sequences/directors_id_seq.sql
+@./sequences/genres_id_seq.sql
+@./sequences/movies_id_seq.sql
+@./sequences/ratings_id_seq.sql
+PROMPT Install sequences done.
 -- Install tables
 PROMPT Installing tables...
 @./table/actors.sql
