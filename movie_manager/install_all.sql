@@ -64,8 +64,6 @@ PROMPT Installing triggers...
 @./trigger/directors_trg.sql
 @./trigger/genres_trg.sql
 @./trigger/movies_trg.sql
-@./trigger/movie_director_trg.sql
-@./trigger/movie_genre_trg.sql
 @./trigger/ratings_trg.sql
 @./trigger/roles_trg.sql
 PROMPT Install triggers done.
@@ -74,8 +72,6 @@ PROMPT Installing log triggers...
 @./trigger/log_trigger/directors_h_trg.sql
 @./trigger/log_trigger/genres_h_trg.sql
 @./trigger/log_trigger/movies_h_trg.sql
-@./trigger/log_trigger/movie_director_h_trg.sql
-@./trigger/log_trigger/movie_genre_h_trg.sql
 @./trigger/log_trigger/ratings_h_trg.sql
 @./trigger/log_trigger/roles_h_trg.sql
 PROMPT Install log triggers done.
