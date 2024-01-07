@@ -1,4 +1,3 @@
--- Genres tábla teszt adatai
 INSERT INTO genres (id, genre) VALUES
 (genres_id_seq.NEXTVAL, 'Sci-Fi');
 INSERT INTO directors (id, name, birth_date) VALUES
