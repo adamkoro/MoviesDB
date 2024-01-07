@@ -63,7 +63,10 @@ PROMPT Install types done.
 -- Views
 PROMPT =====================================================
 PROMPT Installing views...
+PROMPT =====================================================
 @./view/vw_movie_info.sql
+@./view/actor_movie_role.sql
+@./view/vw_movie_director.sql
 PROMPT Install views done
 -- Triggers
 PROMPT =====================================================
