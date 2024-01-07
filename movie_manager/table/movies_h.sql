@@ -2,8 +2,10 @@ CREATE TABLE movies_h (
     id NUMBER,
     title VARCHAR2(250 CHAR),
     release_year DATE,
-    created_on TIMESTAMP(6),
-	last_mod TIMESTAMP(6),
-	dml_flag VARCHAR2(1),
-	version NUMBER
-);
+    creation_time TIMESTAMP(6),
+    creator_user VARCHAR2(250 CHAR),
+    mod_user VARCHAR2(250 CHAR),
+    mod_time TIMESTAMP(6),
+    dml_flag CHAR(1),
+    version NUMBER
+)

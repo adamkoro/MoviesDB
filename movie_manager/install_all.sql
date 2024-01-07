@@ -1,5 +1,8 @@
+PROMPT =====================================================
 PROMPT Installing DB...
+
 -- Install sequences
+PROMPT =====================================================
 PROMPT Installing sequences...
 @./sequences/actors_id_seq.sql
 @./sequences/directors_id_seq.sql
@@ -7,7 +10,9 @@ PROMPT Installing sequences...
 @./sequences/movies_id_seq.sql
 @./sequences/ratings_id_seq.sql
 PROMPT Install sequences done.
+
 -- Install tables
+PROMPT =====================================================
 PROMPT Installing tables...
 @./table/actors.sql
 @./table/directors.sql
@@ -20,6 +25,7 @@ PROMPT Installing tables...
 PROMPT Install tables done.
 
 -- Install log tables
+PROMPT =====================================================
 PROMPT Installing log tables...
 @./table/actors_h.sql
 @./table/directors_h.sql
@@ -32,6 +38,7 @@ PROMPT Installing log tables...
 PROMPT Install log tables done.
 
 -- Install constrains
+PROMPT =====================================================
 PROMPT Installing constrains...
 -- Primary keys
 @./alter/actors_const.sql
@@ -46,6 +53,7 @@ PROMPT Installing constrains...
 PROMPT Install constrains done.
 
 -- Install types
+PROMPT =====================================================
 PROMPT Installing types...
 @./type/ty_movies.sql
 PROMPT Install types done.
@@ -57,10 +65,13 @@ PROMPT Install types done.
 -- Triggers
 
 -- Recompile schema
---BEGIN
---  dbms_utility.compile_schema(schema => 'DOG_MANAGER');
---END;
---/
+PROMPT =====================================================
+PROMPT Recompiling schema...
+BEGIN
+    dbms_utility.compile_schema(schema => 'MOVIE_MANAGER');
+END;
+/
+PROMPT Recompile schema done.
 
 -- FK
 -- Tabla data
