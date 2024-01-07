@@ -1,0 +1,3 @@
+CREATE SEQUENCE movie_director_id_seq
+START WITH 8000
+INCREMENT BY 1;
