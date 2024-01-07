@@ -10,6 +10,8 @@ INSERT INTO roles (movie_id, actor_id, role) VALUES
 (movies_id_seq.CURRVAL, actors_id_seq.CURRVAL, 'Cobb');
 INSERT INTO ratings (id, movie_id, username, rating) VALUES
 (ratings_id_seq.NEXTVAL, movies_id_seq.CURRVAL, 'user1', 5);
+INSERT INTO ratings (id, movie_id, username, rating) VALUES
+(ratings_id_seq.NEXTVAL, movies_id_seq.CURRVAL, 'user2', 5);
 COMMIT;
 
 INSERT INTO genres (id, genre) VALUES
@@ -24,6 +26,8 @@ INSERT INTO roles (movie_id, actor_id, role) VALUES
 (movies_id_seq.CURRVAL, actors_id_seq.CURRVAL, 'Andy Dufresne');
 INSERT INTO ratings (id, movie_id, username, rating) VALUES
 (ratings_id_seq.NEXTVAL, movies_id_seq.CURRVAL, 'user2', 4);
+INSERT INTO ratings (id, movie_id, username, rating) VALUES
+(ratings_id_seq.NEXTVAL, movies_id_seq.CURRVAL, 'user3', 5);
 COMMIT;
 
 INSERT INTO genres (id, genre) VALUES
@@ -38,4 +42,6 @@ INSERT INTO roles (movie_id, actor_id, role) VALUES
 (movies_id_seq.CURRVAL, actors_id_seq.CURRVAL, 'Vincent Vega');
 INSERT INTO ratings (id, movie_id, username, rating) VALUES
 (ratings_id_seq.NEXTVAL, movies_id_seq.CURRVAL, 'user3', 4);
+INSERT INTO ratings (id, movie_id, username, rating) VALUES
+(ratings_id_seq.NEXTVAL, movies_id_seq.CURRVAL, 'user1', 3);
 COMMIT;
