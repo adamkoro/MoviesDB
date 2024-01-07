@@ -9,8 +9,6 @@ PROMPT Installing sequences...
 @./sequences/genres_id_seq.sql
 @./sequences/movies_id_seq.sql
 @./sequences/ratings_id_seq.sql
-@./sequences/movie_director_id_seq.sql
-@./sequences/movie_genre_id_seq.sql
 @./sequences/roles_id_seq.sql
 PROMPT Install sequences done.
 
@@ -21,8 +19,6 @@ PROMPT Installing tables...
 @./table/directors.sql
 @./table/genres.sql
 @./table/movies.sql
-@./table/movie_director.sql
-@./table/movie_genre.sql
 @./table/ratings.sql
 @./table/roles.sql
 PROMPT Install tables done.
@@ -34,8 +30,6 @@ PROMPT Installing log tables...
 @./table/directors_h.sql
 @./table/genres_h.sql
 @./table/movies_h.sql
-@./table/movie_director_h.sql
-@./table/movie_genre_h.sql
 @./table/ratings_h.sql
 @./table/roles_h.sql
 PROMPT Install log tables done.
@@ -49,8 +43,6 @@ PROMPT Installing constrains...
 @./alter/movies_const.sql
 @./alter/director_const.sql
 -- Foreign keys
-@./alter/director_genre_const.sql
-@./alter/movie_genre_const.sql
 @./alter/ratings_const.sql
 @./alter/roles_const.sql
 PROMPT Install constrains done.

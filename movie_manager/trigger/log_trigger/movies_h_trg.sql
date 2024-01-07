@@ -14,6 +14,8 @@ BEGIN
         (id
         ,title
         ,release_year
+        ,genre_id
+        ,director_id
         ,creation_time
         ,creator_user
         ,mod_user
@@ -24,6 +26,8 @@ BEGIN
         (:old.id
         ,:old.title
         ,:old.release_year
+        ,:old.genre_id
+        ,:old.director_id
         ,:old.creation_time
         ,:old.creator_user
         ,v_mod_user
@@ -35,6 +39,8 @@ ELSE
         (id
         ,title
         ,release_year
+        ,genre_id
+        ,director_id
         ,creation_time
         ,creator_user
         ,mod_user
@@ -45,6 +51,8 @@ ELSE
         (:new.id
         ,:new.title
         ,:new.release_year
+        ,:new.release_year
+        ,:new.genre_id
         ,:new.creation_time
         ,:new.creator_user
         ,:new.mod_user
