@@ -140,12 +140,8 @@ PROMPT =====================================================
 PROMPT Run tests...
 PROMPT =====================================================
 @./script/test_create_movie_all_data.sql
---@./procedures/tests/test_add_actor.sql
---@./procedures/tests/test_add_director.sql
---@./procedures/tests/test_add_genre.sql
---@./procedures/tests/test_add_movie.sql
---@./procedures/tests/test_add_role.sql
---@./procedures/tests/test_add_rating.sql
+@./script/test_update_movie.sql
+@./script/test_delete_movie.sql
 PROMPT Tests done.
 
 PROMPT =====================================================
