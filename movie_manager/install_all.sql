@@ -139,8 +139,11 @@ PROMPT Upload data done.
 PROMPT =====================================================
 PROMPT Run tests...
 PROMPT =====================================================
+PROMPT Create a movie.
 @./script/test_create_movie_all_data.sql
+PROMPT Update previously created movie.
 @./script/test_update_movie.sql
+PROMPT Delete previously updateed movie and show movie_h table
 @./script/test_delete_movie.sql
 PROMPT Tests done.
 
