@@ -14,3 +14,5 @@ BEGIN
     movie_management_pkg.modify_movie(v_movie_id, v_movie_title_new, v_movie_release_year, v_movie_genre_id, v_movie_director_id);
 END;
 /
+
+COMMIT;
