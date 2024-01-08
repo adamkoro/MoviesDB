@@ -1,7 +1,7 @@
 DECLARE
     -- movies
     v_movie_id movies.id%TYPE;
-    v_movie_title movies.title%TYPE := 'The Matrix';
+    v_movie_title movies.title%TYPE := 'The Mátrix';
     v_movie_release_year movies.release_year%TYPE := TO_DATE('1999', 'YYYY');
     -- director id
     v_director_id directors.id%TYPE;
