@@ -71,6 +71,18 @@ PROMPT =====================================================
 @./package/rating_management_pkg.pck
 @./package/role_management_pkg.pck
 PROMPT Install packages done
+
+-- Functions
+PROMPT =====================================================
+PROMPT Installing functions...
+PROMPT =====================================================
+@./functions/fn_get_actor_id.sql
+@./functions/fn_get_director_id.sql
+@./functions/fn_get_genre_id.sql
+@./functions/fn_get_movie_id.sql
+@./functions/fn_get_person_id.sql
+PROMPT Install functions done
+
 -- Views
 PROMPT =====================================================
 PROMPT Installing views...
