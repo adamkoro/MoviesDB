@@ -58,8 +58,19 @@ PROMPT Installing types...
 PROMPT =====================================================
 @./type/ty_movies.sql
 PROMPT Install types done.
--- Packes
 
+-- Packages
+PROMPT =====================================================
+PROMPT Installing packages...
+PROMPT =====================================================
+@./package/actor_management_pkg.pck
+@./package/director_management_pkg.pck
+@./package/genre_management_pkg.pck
+@./package/movie_management_pkg.pck
+@./package/person_management_pkg.pck
+@./package/rating_management_pkg.pck
+@./package/role_management_pkg.pck
+PROMPT Install packages done
 -- Views
 PROMPT =====================================================
 PROMPT Installing views...
