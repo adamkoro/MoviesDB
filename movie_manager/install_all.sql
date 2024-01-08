@@ -106,15 +106,6 @@ PROMPT =====================================================
 @./trigger/log_trigger/person_h_trg.sql
 PROMPT Install log triggers done.
 
--- Producers
-PROMPT =====================================================
-PROMPT Installing producers...
-PROMPT =====================================================
-@./procedures/add_genre.sql
-@./procedures/add_person.sql
-@./procedures/add_rating.sql
-PROMPT Install producers done.
-
 -- Recompile schema
 PROMPT =====================================================
 PROMPT Recompiling schema...
