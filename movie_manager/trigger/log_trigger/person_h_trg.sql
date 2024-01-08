@@ -1,5 +1,5 @@
-CREATE OR REPLACE TRIGGER directors_h_trg
-    AFTER INSERT OR UPDATE OR DELETE ON directors
+CREATE OR REPLACE TRIGGER person_h_trg
+    AFTER INSERT OR UPDATE OR DELETE ON person
     FOR EACH ROW
 DECLARE
     v_mod_user VARCHAR2(250 CHAR);
@@ -10,9 +10,10 @@ BEGIN
     v_mod_user := sys_context('USERENV', 'OS_USER');
     v_mod_time := systimestamp;
 
-    INSERT INTO directors_h
+    INSERT INTO person_h
         (id
-        ,person_id
+        ,name
+        ,birth_date
         ,creation_time
         ,creator_user
         ,mod_user
@@ -21,7 +22,8 @@ BEGIN
         ,version)
     VALUES
         (:old.id
-        ,:old.person_id
+        ,:old.name
+        ,:old.birth_date
         ,:old.creation_time
         ,:old.creator_user
         ,v_mod_user
@@ -29,9 +31,10 @@ BEGIN
         ,'D'
         ,:old.version + 1);
 ELSE
-    INSERT INTO directors_h
+    INSERT INTO person_h
         (id
-        ,person_id
+        ,name
+        ,birth_date
         ,creation_time
         ,creator_user
         ,mod_user
@@ -40,7 +43,8 @@ ELSE
         ,version)
     VALUES
         (:new.id
-        ,:new.person_id
+        ,:new.name
+        ,:new.birth_date
         ,:new.creation_time
         ,:new.creator_user
         ,:new.mod_user

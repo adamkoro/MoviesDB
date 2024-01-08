@@ -12,8 +12,7 @@ BEGIN
 
     INSERT INTO actors_h
         (id
-        ,name
-        ,birth_date
+        ,person_id
         ,creation_time
         ,creator_user
         ,mod_user
@@ -22,8 +21,7 @@ BEGIN
         ,version)
     VALUES
         (:old.id
-        ,:old.name
-        ,:old.birth_date
+        ,:old.person_id
         ,:old.creation_time
         ,:old.creator_user
         ,v_mod_user
@@ -33,8 +31,7 @@ BEGIN
 ELSE
     INSERT INTO actors_h
         (id
-        ,name
-        ,birth_date
+        ,person_id
         ,creation_time
         ,creator_user
         ,mod_user
@@ -43,8 +40,7 @@ ELSE
         ,version)
     VALUES
         (:new.id
-        ,:new.name
-        ,:new.birth_date
+        ,:new.person_id
         ,:new.creation_time
         ,:new.creator_user
         ,:new.mod_user

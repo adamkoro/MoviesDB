@@ -12,6 +12,7 @@ PROMPT =====================================================
 @./sequences/movies_id_seq.sql
 @./sequences/ratings_id_seq.sql
 @./sequences/roles_id_seq.sql
+@./sequences/person_id_seq.sql
 PROMPT Install sequences done.
 
 -- Install tables
@@ -24,6 +25,7 @@ PROMPT =====================================================
 @./table/movies.sql
 @./table/ratings.sql
 @./table/roles.sql
+@./table/person.sql
 PROMPT Install tables done.
 
 -- Install log tables
@@ -36,6 +38,7 @@ PROMPT =====================================================
 @./table/movies_h.sql
 @./table/ratings_h.sql
 @./table/roles_h.sql
+@./table/person_h.sql
 PROMPT Install log tables done.
 
 -- Install constrains
@@ -45,6 +48,8 @@ PROMPT =====================================================
 @./alter/movies_const.sql
 @./alter/ratings_const.sql
 @./alter/roles_const.sql
+@./alter/actors_const.sql
+@./alter/directors_const.sql
 PROMPT Install constrains done.
 
 -- Install types
@@ -74,6 +79,7 @@ PROMPT =====================================================
 @./trigger/movies_trg.sql
 @./trigger/ratings_trg.sql
 @./trigger/roles_trg.sql
+@./trigger/person_trg.sql
 PROMPT Install triggers done.
 
 -- Log triggers
@@ -86,18 +92,16 @@ PROMPT =====================================================
 @./trigger/log_trigger/movies_h_trg.sql
 @./trigger/log_trigger/ratings_h_trg.sql
 @./trigger/log_trigger/roles_h_trg.sql
+@./trigger/log_trigger/person_h_trg.sql
 PROMPT Install log triggers done.
 
 -- Producers
 PROMPT =====================================================
 PROMPT Installing producers...
 PROMPT =====================================================
-@./procedures/add_actor.sql
 @./procedures/add_genre.sql
-@./procedures/add_movie.sql
-@./procedures/add_director.sql
+@./procedures/add_person.sql
 @./procedures/add_rating.sql
-@./procedures/add_role.sql
 PROMPT Install producers done.
 
 -- Recompile schema
@@ -118,16 +122,16 @@ PROMPT =====================================================
 PROMPT Upload data done.
 
 -- Test
-PROMPT =====================================================
-PROMPT Run tests...
-PROMPT =====================================================
-@./procedures/tests/test_add_actor.sql
-@./procedures/tests/test_add_director.sql
-@./procedures/tests/test_add_genre.sql
-@./procedures/tests/test_add_movie.sql
-@./procedures/tests/test_add_role.sql
-@./procedures/tests/test_add_rating.sql
-PROMPT Tests done.
+--PROMPT =====================================================
+--PROMPT Run tests...
+--PROMPT =====================================================
+--@./procedures/tests/test_add_actor.sql
+--@./procedures/tests/test_add_director.sql
+--@./procedures/tests/test_add_genre.sql
+--@./procedures/tests/test_add_movie.sql
+--@./procedures/tests/test_add_role.sql
+--@./procedures/tests/test_add_rating.sql
+--PROMPT Tests done.
 
 PROMPT =====================================================
 PROMPT Done.

@@ -1,7 +1,6 @@
 CREATE TABLE directors (
     id NUMBER PRIMARY KEY,
-    name VARCHAR2(250 CHAR) NOT NULL UNIQUE,
-    birth_date DATE NOT NULL,
+    person_id NUMBER NOT NULL,
     creation_time TIMESTAMP(6),
     creator_user VARCHAR2(250 CHAR),
     mod_user VARCHAR2(250 CHAR),

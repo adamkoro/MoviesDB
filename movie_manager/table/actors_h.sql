@@ -1,7 +1,6 @@
 CREATE TABLE actors_h (
     id NUMBER,
-    name VARCHAR2(250 CHAR),
-    birth_date DATE,
+    person_id NUMBER,
     creation_time TIMESTAMP(6),
     creator_user VARCHAR2(250 CHAR),
     mod_user VARCHAR2(250 CHAR),

@@ -1,6 +1,7 @@
-CREATE TABLE directors_h (
-    id NUMBER,
-    person_id NUMBER,
+CREATE TABLE person (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(250 CHAR) NOT NULL UNIQUE,
+    birth_date DATE NOT NULL,
     creation_time TIMESTAMP(6),
     creator_user VARCHAR2(250 CHAR),
     mod_user VARCHAR2(250 CHAR),
