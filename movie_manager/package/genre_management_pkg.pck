@@ -11,10 +11,10 @@ CREATE OR REPLACE PACKAGE genre_management_pkg AS
     PROCEDURE delete_genre(
         p_genre_id IN genres.id%TYPE
     );
-END genre_manage_pkg;
+END genre_management_pkg;
 /
 
-CREATE OR REPLACE PACKAGE BODY genre_manage_pkg AS
+CREATE OR REPLACE PACKAGE BODY genre_management_pkg AS
 
     PROCEDURE add_genre(
         p_genre IN genres.genre%TYPE
