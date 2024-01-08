@@ -136,16 +136,17 @@ PROMPT =====================================================
 PROMPT Upload data done.
 
 -- Test
---PROMPT =====================================================
---PROMPT Run tests...
---PROMPT =====================================================
+PROMPT =====================================================
+PROMPT Run tests...
+PROMPT =====================================================
+@./script/test_create_movie_all_data.sql
 --@./procedures/tests/test_add_actor.sql
 --@./procedures/tests/test_add_director.sql
 --@./procedures/tests/test_add_genre.sql
 --@./procedures/tests/test_add_movie.sql
 --@./procedures/tests/test_add_role.sql
 --@./procedures/tests/test_add_rating.sql
---PROMPT Tests done.
+PROMPT Tests done.
 
 PROMPT =====================================================
 PROMPT Done.
