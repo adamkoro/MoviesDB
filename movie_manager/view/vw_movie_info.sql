@@ -6,7 +6,6 @@ SELECT
     g.genre AS movie_genre,
     pd.name AS director_name,
     pa.name AS actor_name,
-    pa.birth_date AS actor_birth_date,
     r.role AS actor_role,
     AVG(ra.rating) AS average_movie_rating
 FROM 
@@ -32,5 +31,4 @@ GROUP BY
     g.genre,
     pd.name,
     pa.name,
-    pa.birth_date,
     r.role;
