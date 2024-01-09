@@ -10,5 +10,5 @@ CREATE TABLE movies_h (
     mod_time TIMESTAMP(6),
     dml_flag CHAR(1),
     version NUMBER
-)
+);
 /
